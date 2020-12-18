@@ -1,0 +1,52 @@
+# Assignment Summary and Job Breakdown
+
+This assignment will compare the portfolio returns and risk parameters of different types of investors. 
+
+Overall there will be four categories of investors, each chose to invest their capital differently based on their level of risk tolerance.
+
+RISK AVERSE
+
+RISK NEUTRAL
+
+RISK NEUTRAL OPTIMISED WITH ALGORITHMS
+
+RISK HIGH
+
+
+Each type of investor decided to invest different amounts into different asset categories they chose between Shares, Cryptocurrency, Bonds and Commodities. 
+
+
+It is our job to show the returns of each of these portfolios as well as the risk measurements that accompany them. 
+
+
+
+Accordingly, here is a list of tasks that much be achieved to complete this assignment. 
+1. We must extract financial data for each asset class. 
+	For shares we will use information from the S&P 500 as this will be the most accurate representation of the share market.
+	For commodities, an index would be the best representation of the market as well, optimally giving us exposure to more than just gold.
+	For crypto, an index would be the best representation of the market as well, optimally giving us exposure to more than just gold.
+	For Bonds we will be using the bond yield for US Treasury Bonds as these are regarded as 'risk free assets'. 
+	
+
+If for whatever reason an index cannot be found/extracted from the web we will have to make our own. This will be done by multiplying (0.2)('crypto returns') five times for all the currencies we wish to use.
+
+
+2. Once this data is found, export said data into a CSV file so that it may be read into the main .ipynb file. It is here that we can concatenate the data into a single dataframe to be applied to the portfolios.
+
+3. Now we must decide on the weightings of each portfolio. As a rough outline it may look like this 
+
+	RISK AVERSE = 50% Bonds, 30% shares, 15% commodities, 5% crypto.
+
+	RISK NEUTRAL = 20% Bonds, 50% shares, 10% crypto, 20% commodities.
+
+	RISK HIGH = 5% Bonds, 50% shares, 30% crypto, 15% commodities
+
+
+To create the portfolios the equation is quite simple. E.g. for RISK AVERSE portfolio return the equation would be... 
+
+		(0.5)(bond returns) + (0.3)(share returns) + (0.15)(commodities returns)+ (0.05)(crypto returns) 
+
+Our returns will be plotted using HVPLOT and then prepared for upload to dashboard. 
+
+
+Feel free to alter this document if needed.
